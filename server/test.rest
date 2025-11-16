@@ -1,0 +1,89 @@
+### CAR LIST API
+
+### Get all cars
+GET http://localhost:3000/api/cars
+Content-Type: application/json
+
+
+### Add a new car (dynamic)
+POST http://localhost:3000/api/cars/add
+Content-Type: application/json
+
+{
+  "name": "Swift Dzire",
+  "category": "Sedan",
+  "costPerKm": 12,
+  "image": "swift.jpg"
+}
+
+
+### BOOKING / CART API
+
+### Get all booked cars (cart)
+GET http://localhost:3000/api/cars/cart
+Content-Type: application/json
+
+
+### Book a car (add to cart)
+POST http://localhost:3000/api/cars/cart/add
+Content-Type: application/json
+
+{
+  "name": "Swift Dzire",
+  "category": "Sedan",
+  "costPerKm": 12,
+  "image": "swift.jpg",
+  "distance": 20,
+  "journeyDate": "2025-11-20"
+}
+
+
+### Remove ONE booking by ID
+DELETE http://localhost:3000/api/cars/cart/delete/6919ceb89f2daa5c96715103
+Content-Type: application/json
+
+
+### Clear ALL bookings
+DELETE http://localhost:3000/api/cars/cart/clear
+Content-Type: application/json
+
+###
+POST http://localhost:3000/api/cars/add
+Content-Type: application/json
+
+{
+  "name": "Toyota Innova Crysta",
+  "category": "SUV",
+  "costPerKm": 16,
+  "image": "innova.jpg"
+}
+
+###
+POST http://localhost:3000/api/cars/add
+Content-Type: application/json
+
+{
+  "name": "Maruti Swift",
+  "category": "Hatchback",
+  "costPerKm": 10,
+  "image": "swift.jpg"
+}
+
+###
+POST http://localhost:3000/api/cars/add
+Content-Type: application/json
+
+{
+  "name": "Hyundai Verna",
+  "category": "Sedan",
+  "costPerKm": 14,
+  "image": "verna.jpg"
+}
+
+###
+PUT http://localhost:3000/api/cars/cart/update/6919d2fd53ae44e5fcc9a65f
+Content-Type: application/json
+
+{
+  "distance": 45
+}
