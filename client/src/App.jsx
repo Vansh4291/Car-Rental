@@ -27,7 +27,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<CarUseState />} />
         <Route path="/cart" element={<CarCart />} />
-        <Route path="/invoice-car" element={<InvoiceCar />} />
+        <Route path="/invoice" element={<InvoiceCar />} />
       </Routes>
     </BrowserRouter>
   );

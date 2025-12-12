@@ -97,7 +97,7 @@ export default function CarCart({ cart = [], onClearCart, refresh }) {
             </button>
             <button
               className="btn btn-success ms-2"
-              onClick={() => (window.location.href = "/invoice-car")}
+              onClick={() => (window.location.href = "/invoice")}
             >
               View Invoices
             </button>
